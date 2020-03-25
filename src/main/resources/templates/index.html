@@ -2,6 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="https://colorlib.com/polygon/admindek/files/assets/images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/waves.min.css}" media="all">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/c3.css}" media="all">
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/pages.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/widget.css}">
     <title>Title</title>
 </head>
 <body>
@@ -53,7 +55,7 @@
                                                 <div class="card-body text-center">
                                                     <h3 class="text-c-red f-w-700">6,750</h3>
                                                     <p>Total Cases</p>
-                                                    <p class="m-b-0 m-t-15"><i class="fas fa-caret-up m-r-10 f-18 text-c-green"></i>223 from last 7 days</p>
+                                                    <p class="m-b-0 m-t-15 text-c-red"> &uarr; 22%</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -61,8 +63,8 @@
                                             <div class="card social-card">
                                                 <div class="card-body text-center">
                                                     <h3 class="text-c-yellow f-w-700">9,752</h3>
-                                                    <p>New Cases</p>
-                                                    <p class="m-b-0 m-t-15"><i class="fas fa-caret-up m-r-10 f-18 text-c-green"></i>623 from last 7 days</p>
+                                                    <p>New Cases (25/03/2020)</p>
+                                                    <p class="m-b-0 m-t-15"><span class="text-c-red">+</span> 20%</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -78,85 +80,26 @@
                                         <div class="col-xl-3 col-md-6">
                                             <div class="card social-card">
                                                 <div class="card-body text-center">
-                                                    <h3 class="text-linkedin f-w-700">952</h3>
+                                                    <h3 class="text-dark f-w-700">9</h3>
                                                     <p>Total Deaths</p>
                                                     <p class="m-b-0 m-t-15"><i class="fas fa-caret-down m-r-10 f-18 text-c-red"></i>98 from last 7 days</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
+                                    <!-- CHARTS//////////////////////////////////////////////////// -->
                                     <div class="row">
                                         <div class="col-md-12 col-lg-6">
                                             <div class="card">
                                                 <div class="card-header">
-                                                    <h5>Stacked Area Chart</h5>
+                                                    <h5>Daily New Cases</h5>
                                                 </div>
                                                 <div class="card-block">
                                                     <div id="chart"></div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 col-lg-6">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Chart Bar Stacked</h5>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="chart1"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-lg-6">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Gauge Chart</h5>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="chart2"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-lg-6">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Pie Chart</h5>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="chart3"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-lg-6">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Combination Chart</h5>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="chart4"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 col-lg-6">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Step Chart</h5>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="chart5"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5>Scatter Plot Chart</h5>
-                                                </div>
-                                                <div class="card-block">
-                                                    <div id="chart6"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
