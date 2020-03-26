@@ -6,10 +6,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class ApplicationController {
-    @GetMapping
-    public String index(Model model){
+    @GetMapping("/index.html")
+    public String index(Model model) {
         String name = "Zhen";
         model.addAttribute("name", name);
         return "index";
     }
+
+    @GetMapping("/addupdate.html")
+    public String add_update(Model model) {
+        String name = "Wang";
+        model.addAttribute("name", name);
+        return "add_update";
+    }
+
 }
