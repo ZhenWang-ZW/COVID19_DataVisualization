@@ -1,10 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Add/Update Data</title>
+    <link rel="icon" href="https://colorlib.com/polygon/admindek/files/assets/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/waves.min.css}" media="all">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/feather.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/themify-icons.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/icofont.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/c3.css}" media="all">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/pages.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/widget.css}">
+    <title>Title</title>
 </head>
 <body>
-    <p>form here</p>
+<div class="loader-bg">
+    <div class="loader-bar"></div>
+</div>
+
+<div id="pcoded">
+
+    <div class="pcoded-container">
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <!--    <span th:text="${name}" />-->
+                <div class="pcoded-content">
+
+                    <div class="page-header card">
+                        <div class="row align-items-end">
+                            <div class="col-lg-8">
+                                <div class="page-header-title">
+                                    <i class="feather icon-pie-chart bg-c-blue"></i>
+                                    <div class="d-inline">
+                                        <h5>COVID-19 Pandemic in Ireland</h5>
+                                        <span>Number of New, Total, Deaths, Recoveries cases</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pcoded-inner-content">
+
+                        <div class="main-body">
+                            <div class="page-wrapper">
+                                <div class="page-body">
+
+                                    <div class="col-lg-4">
+                                        <div class="page-header-breadcrumb">
+                                            <ul class=" breadcrumb breadcrumb-title">
+                                                <li class="breadcrumb-item">
+                                                    <a href="/index.html">&larr; Back to index</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>Add New/Update cases</h5>
+                                            <span>Add class of <code>.form-control</code> with <code>&lt;input&gt;</code> tag</span>
+                                        </div>
+                                        <div class="card-block">
+                                            <form id="second" action="https://colorlib.com/" method="post" novalidate>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Select Date</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="date" class="form-control" name="Date" placeholder="Select Date">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">New Cases</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="number" class="form-control" name="cases" placeholder="Enter new cases">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <label class="col-sm-2"></label>
+                                                    <div class="col-sm-10">
+                                                        <button type="submit" class="btn btn-primary m-b-0">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="styleSelector">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/jquery.min.js}"></script>
+<script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/jquery-ui.min.js}"></script>
+<script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/popper.min.js}"></script>
+<script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+<!--    <script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/waves.min.js}" ></script>-->
+<!--    <script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/jquery.slimscroll.js}"></script>-->
+<!--    <script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/waves.min.js}"></script>-->
+<!--    <script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/modernizr.js}"></script>-->
+<!--    <script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/css-scrollbars.js}"></script>-->
+<script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/d3.min.js}"></script>
+<script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/c3.js}"></script>
+<script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/c3-custom-chart.js}"></script>
+<!--    <script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/pcoded.min.js}"></script>-->
+<!--    <script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/vertical-layout.min.js}" ></script>-->
+<!--    <script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/jquery.mcustomscrollbar.concat.min.js}"></script>-->
+<script type="edfaf0e4e15d97d1100761e4-text/javascript" th:src="@{/js/script.js}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="edfaf0e4e15d97d1100761e4-text/javascript"></script>
+<script type="edfaf0e4e15d97d1100761e4-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23581568-13');
+    </script>
+<script data-cf-settings="edfaf0e4e15d97d1100761e4-|49" th:src="@{/js/rocket-loader.min.js}" defer=""></script>
 </body>
 </html>
